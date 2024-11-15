@@ -1,0 +1,365 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.home {
+  background-image: url("https://shotkit.com/wp-content/uploads/2021/02/motion-blur.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.home .nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  align-items: center;
+}
+
+.home .nav .logo h1 {
+  color: white;
+}
+
+.home .nav .logo h1 span {
+  color: rgba(255, 0, 0, 0.808);
+}
+
+.home .nav .item {
+  display: flex;
+  column-gap: 20px;
+}
+
+.home .nav .item a:hover {
+  color: #7c00ad;
+}
+
+.home .nav .item a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.4s ease-in-out;
+}
+
+.home .nav .item a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.home .nav .btn input {
+  padding: 10px 30px;
+  border-radius: 40px;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.home .home-hero {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  color: white;
+}
+
+.home .home-hero .txt2 {
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  width: 55vw;
+}
+
+.bn632-hover {
+  width: 160px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.bn632-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.bn632-hover:focus {
+  outline: none;
+}
+
+.bn632-hover.bn24 {
+  background-image: linear-gradient(to right,
+      #6253e1,
+      #852d91,
+      #a3a1ff,
+      #f24645);
+  box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+
+.home-hero .btn button {
+  width: 230px;
+}
+
+.srch-sec {
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.774);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+}
+
+.srch-sec .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.srch-sec .btn input {
+  width: 60vw;
+  height: 9vh;
+  border-radius: 30px;
+  border: none;
+  position: absolute;
+  padding-left: 20px;
+}
+
+.srch-sec .btn button {
+  position: relative;
+  margin-left: 685px;
+  padding: 16px 30px;
+  border: none;
+  border-radius: 30px;
+  background-image: linear-gradient(80deg, #982fe5, #2d84f1);
+  box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+  cursor: pointer;
+}
+
+.srch-sec .menu {
+  display: flex;
+  column-gap: 10px;
+}
+
+.srch-sec .menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.srch-sec .menu .btn1 {
+  padding: 10px 20px;
+  background-color: #a52a2a78;
+  border-radius: 30px;
+}
+
+.srch-sec .menu .btn2 {
+  padding: 10px 20px;
+  background-color: #65a52a78;
+  border-radius: 30px;
+}
+
+.srch-sec .menu .btn3 {
+  padding: 10px 20px;
+  background-color: #a52a9f78;
+  border-radius: 30px;
+}
+
+.srch-sec .menu .btn4 {
+  padding: 10px 20px;
+  background-color: #a52a4578;
+  border-radius: 30px;
+}
+
+.srch-sec .menu .btn5 {
+  padding: 10px 20px;
+  background-color: #a5882a78;
+  border-radius: 30px;
+}
+
+.srch-sec .menu .btn6 {
+  padding: 10px 20px;
+  background-color: #a5612a78;
+  border-radius: 30px;
+}
+
+.srch-sec .menu .btn7 {
+  padding: 10px 20px;
+  background-color: #2aa57278;
+  border-radius: 30px;
+}
+
+.slide {
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  /* background-color: red; */
+  flex-direction: column;
+}
+
+.slide .txt {
+  padding-top: 50px;
+}
+
+.slide .main-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: blue; */
+  padding: 50px;
+  column-gap: 10px;
+}
+
+.slide .main-sec .box{
+  transition: all 0.5s ease-in-out;
+}
+
+.slide .main-sec .box:hover{
+  transform: skewY(10deg);
+}
+
+.slide .main-sec .box1 img {
+  width: 150px;
+  cursor: pointer;
+}
+
+.slide .main-sec .box2 img {
+  width: 250px;
+  cursor: pointer;
+}
+
+.slide .main-sec .box3 img {
+  width: 300px;
+  cursor: pointer;
+}
+
+.slide .main-sec .box4 img {
+  width: 250px;
+  cursor: pointer;
+}
+
+.slide .main-sec .box5 img {
+  width: 150px;
+  cursor: pointer;
+}
+
+.movie-sec {
+  height: 158vh;
+  padding: 30px;
+  background-image: linear-gradient(45deg, #00256c, #091a1f);
+}
+
+.movie-sec .discover p{
+  color: rgb(255, 255, 255);
+}
+
+.movie-sec .main-sec {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.movie-sec .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 35px;
+  /* background-color: #6253e1; */
+}
+
+.movie-sec .nav .item {
+  display: flex;
+  column-gap: 20px;
+  cursor: pointer;
+}
+
+.movie-sec .nav .item .random {
+  border-bottom: 2px solid rgb(255, 145, 0);
+}
+
+.movie-sec .nav .item a {
+  text-decoration: none;
+  padding: 10px 10px;
+  color: white;
+}
+
+.movie-sec .box .rat {
+  background-color: yellow;
+  width: fit-content;
+  padding: 5px 15px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  position: absolute;
+  margin-top: 10px;
+}
+
+.movie-sec .box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  /* background-color: rebeccapurple; */
+  width: 220px;
+  cursor: pointer;
+}
+
+.movie-sec .main-sec .box img {
+  width: 220px;
+  border-radius: 10px;
+  height: 330px;
+}
+
+.movie-sec .main-sec .box .txt {
+  /* padding: 5px; */
+  display: flex;
+  row-gap: 10px;
+  flex-direction: column;
+}
+
+.movie-sec .main-sec .box .txt .txt1 {
+  color: #00ffbb;
+  font-weight: bold;
+}
+
+.movie-sec .main-sec .box .txt .txt2 {
+  color: white;
+  font-weight: bold;
+}
+
+.movie-sec .btn{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.foot-sec{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
