@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookYrMovie</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">Book Your Movie</div>
+            <!-- <nav class="menu">
+                <a href="">
+                    <svg fill="rgba(30,23,22,1)" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0V0z" fill="none"/>
+                        <path d="M4 6.47L5.76 10H20v8H4V6.47M22 4h-4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4z"/>
+                        </svg>
+                    Movies
+                </a>
+
+                <a href="">
+                    <svg fill="rgba(30,23,22,1)" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0V0z" fill="none"/>
+                        <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V6h16v12zM6 10h2v2H6zm0 4h8v2H6zm10 0h2v2h-2zm-6-4h8v2h-8z"/>
+                        </svg>
+                    popular cities
+                </a>
+                <a href="">
+                    <svg fill="#fff" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0V0z" fill="none"/>
+                        <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm-1-9c0-.55.45-1 1-1s1 .45 1 1v6c0 .55-.45 1-1 1s-1-.45-1-1V5zm6 6c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/>
+                        </svg>
+                        
+                    stream
+                </a>
+                <!-- <a href=""> -->
+            <!-- <svg fill="rgba(30,23,22,1)" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0V0z" fill="none"/>
+                        <path d="M12 1.95c-5.52 0-10 4.48-10 10s4.48 10 10 10h5v-2h-5c-4.34 0-8-3.66-8-8s3.66-8 8-8 8 3.66 8 8v1.43c0 .79-.71 1.57-1.5 1.57s-1.5-.78-1.5-1.57v-1.43c0-2.76-2.24-5-5-5s-5 2.24-5 5 2.24 5 5 5c1.38 0 2.64-.56 3.54-1.47.65.89 1.77 1.47 2.96 1.47 1.97 0 3.5-1.6 3.5-3.57v-1.43c0-5.52-4.48-10-10-10zm0 13c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"/>
+                        </svg>
+                        Contact
+                </a>
+            </nav> -->
+            <div class="user-actions">
+                <div class="signin" onclick="document.getElementById('id01').style.display='block'">Sign in</div>
+            </div>
+            <label class="openmenu">=
+                <svg fill="rgba(30,23,22,1)" width="32" height="32" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0h24v24H0V0z" fill="none" />
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                </svg>
+            </label>
+        </div>
+    </header>
+    <div onclick="document.getElementById('id01').style.display='block'">
+        <!-- login section  -->
+
+        <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+
+            <!-- Modal Content -->
+            <form class="modal-content animate" action="/BookingPage/index.html">
+
+                <div class="imgcontainer">
+                    <b>login to continue</b>
+                    <img src="images/userImage/user.png" alt="User" class="avatar">
+                </div>
+
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit">Login</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                        class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+
+        <div class="recommended-movie">
+            <div class="container" style="background-image: url(images/godfather.avif);">
+                <div class="subtitle">
+                    <div class="title">Godfather</div>
+                    <div class="about">Running succesfully in theaters . BOOK NOW</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="movie-types">
+            <div class="container">
+                <h5>English movies <a href="">All<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                            height="24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
+                                fill="rgba(30,23,22,1)" />
+                        </svg></a></h5>
+                <div class="wrapper">
+
+                    <div class="movie" style="background-image: url(images/english/topgun-portrait.avif)"></div>
+                    <div class="movie" style="background-image: url(images/english/black-adam-portrait.avif)"></div>
+                    <div class="movie" style="background-image: url(images/english/halloween-endportrait.avif)"></div>
+                    <div class="movie" style="background-image: url(images/english/ticket-to-paradise-portrait.avif)">
+                    </div>
+                    <div class="movie" style="background-image: url(images/english/everywherej-portrait.avif)"></div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="movie-types">
+            <div class="container">
+                <h5>Hindi <a href="">All<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                            height="24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
+                                fill="rgba(30,23,22,1)" />
+                        </svg></a></h5>
+                <div class="wrapper">
+
+                    <div class="movie" style="background-image: url(images/hindi/ps1-portrait.avif)"></div>
+                    <div class="movie" style="background-image: url(images/hindi/codename-portrait.avif)"></div>
+                    <div class="movie" style="background-image: url(images/hindi/Doctor-g-portrait.avif)"></div>
+                    <div class="movie" style="background-image: url(images/hindi/kantara-portrait.avif)"></div>
+                    <div class="movie" style="background-image: url(images/hindi/vikramveda-portrait.avif)"></div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="movie-types">
+            <div class="container">
+                <h5>Kannada <a href="">All<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                            height="24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
+                                fill="rgba(30,23,22,1)" />
+                        </svg></a></h5>
+                <div class="wrapper">
+
+                    <div class="movie" style="background-image: url(images/hindi/kantara-portrait.avif)"></div>
+                    <div class="movie" style="background-image: url(images/hindi/ps1-portrait.avif)"></div>
+                    <div class="movie" style="background-image: url(images/kannada/kannada-movie-portrait.avif)"></div>
+                    <div class="movie" style="background-image: url(images/kannada/tottapuri-portrait.avif)"></div>
+                    <div class="movie" style="background-image: url(images/kannada/mrp-portrait\ \(1\).avif)"></div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="movie-types">
+            <div class="container">
+                <h5>Tamil <a href="">All<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                            height="24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
+                                fill="rgba(30,23,22,1)" />
+                        </svg></a></h5>
+                <div class="wrapper">
+
+                    <div class="movie" style="background-image: url(images/tamil/aatral-portrait.avif)"></div>
+                    <div class="movie" style="background-image: url(images/tamil/kandara-portrait.avif)"></div>
+                    <div class="movie" style="background-image: url(images/tamil/naane-varuve-portrait.avif)"></div>
+                    <div class="movie" style="background-image: url(images/tamil/repeat-portrait.avif)"></div>
+                    <div class="movie" style="background-image: url(images/tamil/tiruchambalam-portrait.avif)"></div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="movie-types">
+            <div class="container">
+                <h5>Telugu <a href="">All<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                            height="24">
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"
+                                fill="rgba(30,23,22,1)" />
+                        </svg></a></h5>
+                <div class="wrapper">
+
+                    <div class="movie" style="background-image: url(images/telugu/kandara-portrait.avif)"></div>
+                    <div class="movie" style="background-image: url(images/telugu/neeto-portrait.avif)"></div>
+                    <div class="movie" style="background-image: url(images/telugu/god-father-portrait.avif)"></div>
+                    <div class="movie" style="background-image: url(images/hindi/ps1-portrait.avif)"></div>
+                    <div class="movie" style="background-image: url(images/english/black-adam-portrait.avif)"></div>
+
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="Copyright">
+                    © Book your movie
+                </div>
+                <div class="text">
+                    <b>Book your movie</b> CopyRight © All Rights Reserved
+                </div>
+            </div>
+        </footer>
+        <div class="mobile-menu">
+            <div class="head">
+                <div class="logo">Book your Movie</div>
+                <label class="closemenu">
+                    <svg fill="rgba(30,23,22,1)" width="32" height="32" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path
+                            d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+                    </svg>
+
+                </label>
+
+            </div>
+            <nav class="menu">
+                <a href="">
+                    <svg fill="rgba(30,23,22,1)" viewBox="0 0 24 24" width="24" height="24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path
+                            d="M4 6.47L5.76 10H20v8H4V6.47M22 4h-4l2 4h-3l-2-4h-2l2 4h-3l-2-4H8l2 4H7L5 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4z" />
+                    </svg>
+                    Movies
+                </a>
+
+
+                <a href="">
+                    <svg fill="rgba(30,23,22,1)" viewBox="0 0 24 24" width="24" height="24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path
+                            d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V6h16v12zM6 10h2v2H6zm0 4h8v2H6zm10 0h2v2h-2zm-6-4h8v2h-8z" />
+                    </svg>
+                    popular cities
+                </a>
+                <a href="">
+                    <svg fill="rgba(30,23,22,1)" viewBox="0 0 24 24" width="24" height="24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path
+                            d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm-1-9c0-.55.45-1 1-1s1 .45 1 1v6c0 .55-.45 1-1 1s-1-.45-1-1V5zm6 6c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z" />
+                    </svg>
+
+                    stream
+                </a>
+                <a href="">
+                    <svg fill="rgba(30,23,22,1)" viewBox="0 0 24 24" width="24" height="24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0h24v24H0V0z" fill="none" />
+                        <path
+                            d="M12 1.95c-5.52 0-10 4.48-10 10s4.48 10 10 10h5v-2h-5c-4.34 0-8-3.66-8-8s3.66-8 8-8 8 3.66 8 8v1.43c0 .79-.71 1.57-1.5 1.57s-1.5-.78-1.5-1.57v-1.43c0-2.76-2.24-5-5-5s-5 2.24-5 5 2.24 5 5 5c1.38 0 2.64-.56 3.54-1.47.65.89 1.77 1.47 2.96 1.47 1.97 0 3.5-1.6 3.5-3.57v-1.43c0-5.52-4.48-10-10-10zm0 13c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z" />
+                    </svg>
+                    Contact
+                </a>
+
+            </nav>
+            <div class="user-actions">
+                <div class="signin">Sign in</div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

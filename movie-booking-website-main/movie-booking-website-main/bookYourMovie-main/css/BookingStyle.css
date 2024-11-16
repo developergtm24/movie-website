@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+
+}
+
+body {
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    margin-top: 20rem;
+
+}
+
+.row {
+    display: flex;
+}
+
+.seat {
+    background-color: cyan;
+    height: 1.3rem;
+    width: 1.3rem;
+    margin: 3px;
+}
+
+.seat.booked {
+    background-color: grey;
+}
+
+.seat:nth-of-type(2) {
+    margin-right: 25px;
+}
+
+.seat:nth-last-of-type(2) {
+    margin-left: 25px;
+}
+
+.premium-seat {
+    background-color: cyan;
+    height: 1.3rem;
+    width: 1.3rem;
+    margin: 3px;
+}
+
+.premium-seat.booked {
+    background-color: grey;
+}
+
+.premium-seat:nth-of-type(7) {
+    margin-right: 75px;
+}
+
+/* .premium-seat:nth-last-of-type(3){
+    margin-left: 25px;
+} */
+.premium-seat.selected {
+    background-color: red;
+}
+
+.premium-seat:not(.booked):hover {
+    cursor: pointer;
+    transform: scale(1.3);
+    border: 1px solid;
+    border-color: red;
+    border-radius: 15%;
+}
+
+.paybtn {
+    width: 78px;
+    height: 46px;
+    background-color: #f34c55;
+    color: #fff;
+    border: aquamarine;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+
+}
+
+.paybtn:hover {
+    transform: scale(1.3);
+    transition: 200ms background-color ease-in-out;
+}
+
+.seat.selected {
+    background-color: red;
+}
+
+.seat:not(.booked):hover {
+    cursor: pointer;
+    transform: scale(1.3);
+    border: 1px solid;
+    border-color: red;
+    border-radius: 15%;
+}
+
+/* seat-hint section */
+.seat-hint {
+    background-color: aquamarine;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: grey;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.seat-hint li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.seat-hint li small {
+    margin-left: 10px;
+}
+
+.seat-hint .seat:not(.booked):hover {
+    cursor: default;
+    transform: scale(1);
+    border: none;
+}
+
+/* screen section  starts*/
+.screen {
+    background-color: rgb(236, 217, 217);
+    color: rgb(112, 112, 198);
+    height: 70px;
+    width: 360px;
+    margin: -22px 0px 6px 0px;
+    transform: rotateX(56deg);
+    box-shadow: 0 3px 10px rgba(52, 51, 51, 0.75);
+}
+
+.screenBox {
+    perspective: 1001px;
+    margin-bottom: 10px;
+}
+
+/* screen section  ends*/
